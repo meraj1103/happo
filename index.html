@@ -94,11 +94,18 @@
 </div>
 
 <audio id="bgMusic" loop>
-    <source src="./audio/birthday.mp3" type="audio/mpeg">
+  <source src="./audio/birthday.mp3" type="audio/mpeg">
 </audio>
 
-<button class="music-btn" onclick="playMusic()">🎵 Music</button>
-<script scr="script.js"></script>
+<script>
+  document.addEventListener("click", function () {
+    const music = document.getElementById("bgMusic");
+    if (music.paused) {
+      music.play();
+    }
+  }, { once: true });
+</script>
+
 
 
 
@@ -114,6 +121,7 @@
 
 </body>
 </html>
+
 
 
 
