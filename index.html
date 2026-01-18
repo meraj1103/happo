@@ -92,9 +92,12 @@
     <button onclick="prevPage()">⬅</button>
     <button onclick="nextPage()">➡</button>
 </div>
-<audio autoplay loop style="display:none;">
+<audio id="bgMusic" loop>
   <source src="audio/birthday.mp3" type="audio/mpeg">
 </audio>
+
+<button onclick="document.getElementById('bgMusic').play()">Play Music</button>
+
 
 
 <script src="script.js"></script>
@@ -109,6 +112,7 @@
 
 </body>
 </html>
+
 
 
 
