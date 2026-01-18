@@ -93,12 +93,29 @@
     <button onclick="nextPage()">➡</button>
 </div>
 <audio id="bgMusic" loop>
-  <source src="audio/birthday.mp3" type="audio/mpeg">
+  <source src="./audio/birthday.mp3" type="audio/mpeg">
 </audio>
 
-<button onclick="document.getElementById('bgMusic').play()">Play Music</button>
+<button onclick="playMusic()" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #4da6ff;
+  color: white;
+  cursor: pointer;
+">
+🎵 Play Music
+</button>
 
-
+<script>
+  function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+  }
+</script>
 
 <script src="script.js"></script>
 <!-- Floating stars -->
@@ -112,6 +129,7 @@
 
 </body>
 </html>
+
 
 
 
