@@ -92,23 +92,13 @@
     <button onclick="prevPage()">⬅</button>
     <button onclick="nextPage()">➡</button>
 </div>
+
 <audio id="bgMusic" loop>
-  <source src="./audio/birthday.mp3" type="audio/mpeg">
+    <source src="./audio/birthday.mp3" type="audio/mpeg">
 </audio>
 
-<button onclick="playMusic()" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: none;
-  background: #4da6ff;
-  color: white;
-  cursor: pointer;
-">
-🎵 Play Music
-</button>
+<button class="music-btn" onclick="playMusic()">🎵 Music</button>
+
 
 <script>
   function playMusic() {
@@ -129,6 +119,7 @@
 
 </body>
 </html>
+
 
 
 
