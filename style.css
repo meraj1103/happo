@@ -162,3 +162,11 @@ body {
     50% { transform: translateY(-15px) translateX(10px) rotate(180deg); opacity: 1; }
     100% { transform: translateY(0) translateX(0) rotate(360deg); opacity: 0.8; }
 }
+document.addEventListener("click", () => {
+    const music = document.getElementById("bgMusic");
+    if (music.paused) {
+        music.volume = 0.4; // soft background music
+        music.play();
+    }
+}, { once: true });
+
