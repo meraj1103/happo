@@ -45,3 +45,11 @@ document.addEventListener("touchend", e => {
     if (startX - endX > 60) nextPage();
     if (endX - startX > 60) prevPage();
 });
+document.addEventListener("click", () => {
+    const music = document.getElementById("bgMusic");
+    if (music.paused) {
+        music.volume = 0.4;
+        music.play();
+    }
+}, { once: true });
+
